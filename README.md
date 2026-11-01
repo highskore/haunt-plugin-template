@@ -4,7 +4,7 @@
 
 A Haunt plugin: a sandboxed WebAssembly component that adds a "Say hello" command to the ⌘K palette and badges new tasks and tool calls.
 
-Start a new plugin with `haunt plugin new <name> [--id <reverse-dns id>]`. It fills `{{id}}`, `{{name}}` and `{{description}}` in this template and runs `git init`. If you copy the template by hand, replace those three placeholders yourself; `haunt plugin install` refuses the `{{id}}` placeholder.
+Start a new plugin with `haunt plugin new <name> [--dir <path>] [--id <reverse-dns id>]`: it copies this template, fills in the id, name and description, and runs `git init`. If you copy the template by hand, replace the double-brace placeholders in `haunt-plugin.toml`, `Cargo.toml` and this README yourself; `haunt plugin install` refuses the placeholder id.
 
 ## Build
 
